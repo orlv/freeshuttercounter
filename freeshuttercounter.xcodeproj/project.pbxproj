@@ -60,6 +60,7 @@
 		7C1592931C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C15929E1C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freeshuttercounter.m; sourceTree = "<group>"; };
+		7C1AE5381CA1681500B43077 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
 		7C304E101CA1517100C1191D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				7C75CD141CA15EBD0006F109 /* README.md */,
+				7C1AE5381CA1681500B43077 /* COPYING */,
 				7CA461611CA162CD00C98B8D /* freeshuttercounter-1.0.1.png */,
 				7C13F6A91CA0498900F66CBD /* GPhoto2.framework */,
 				7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */,
