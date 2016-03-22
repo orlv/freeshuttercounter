@@ -1,0 +1,51 @@
+
+/* Class = "NSMenuItem"; title = "freeshuttercounter"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "freeshuttercounter";
+
+/* Class = "NSMenuItem"; title = "Quit freeshuttercounter"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit freeshuttercounter";
+
+/* Class = "NSMenuItem"; title = "About freeshuttercounter"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About freeshuttercounter";
+
+/* Class = "NSMenuItem"; title = "Select All"; ObjectID = "8CC-bz-Snr"; */
+"8CC-bz-Snr.title" = "Select All";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSWindow"; title = "freeshuttercounter"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "freeshuttercounter";
+
+/* Class = "NSButtonCell"; title = "freeshuttercounter.oleg-orlov.com"; ObjectID = "KQo-Yo-iIh"; */
+"KQo-Yo-iIh.title" = "freeshuttercounter.oleg-orlov.com";
+
+/* Class = "NSMenuItem"; title = "Show All"; ObjectID = "Kd2-mp-pUS"; */
+"Kd2-mp-pUS.title" = "Show All";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "OEG-Hp-X8N"; */
+"OEG-Hp-X8N.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Hide freeshuttercounter"; ObjectID = "Olw-nP-bQN"; */
+"Olw-nP-bQN.title" = "Hide freeshuttercounter";
+
+/* Class = "NSMenuItem"; title = "Hide Others"; ObjectID = "Vdr-fp-XzO"; */
+"Vdr-fp-XzO.title" = "Hide Others";
+
+/* Class = "NSMenu"; title = "Edit"; ObjectID = "aX5-Tt-FoQ"; */
+"aX5-Tt-FoQ.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "Copy"; ObjectID = "qyv-sD-yag"; */
+"qyv-sD-yag.title" = "Copy";
+
+/* Class = "NSTextFieldCell"; title = "Connect and turn on the camera, then push the button below"; ObjectID = "sd8-oZ-yMA"; */
+"sd8-oZ-yMA.title" = "Connect and turn on the camera, then push the button below";
+
+/* Class = "NSButtonCell"; title = "Get Shutter Count"; ObjectID = "tXh-7N-5wD"; */
+"tXh-7N-5wD.title" = "Get Shutter Count";
+
+/* Class = "NSMenu"; title = "freeshuttercounter"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "freeshuttercounter";
+
+/* Class = "NSTextFieldCell"; title = "freeshuttercounter v1.0.1 by Oleg Orlov"; ObjectID = "zpj-By-Jgd"; */
+"zpj-By-Jgd.title" = "freeshuttercounter v1.0.1 by Oleg Orlov";

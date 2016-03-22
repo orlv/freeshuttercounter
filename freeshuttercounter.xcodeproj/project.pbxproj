@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C13F6AA1CA0498900F66CBD /* GPhoto2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F6A91CA0498900F66CBD /* GPhoto2.framework */; };
+		7C13F6AB1CA0498900F66CBD /* GPhoto2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F6A91CA0498900F66CBD /* GPhoto2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592811C9EC97500AFEDF3 /* AppDelegate.m */; };
+		7C1592881C9EC97500AFEDF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592871C9EC97500AFEDF3 /* ViewController.m */; };
+		7C15928A1C9EC97500AFEDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1592891C9EC97500AFEDF3 /* Assets.xcassets */; };
+		7C15928D1C9EC97500AFEDF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C15928B1C9EC97500AFEDF3 /* Main.storyboard */; };
+		7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */; };
+		7C6480431CA1541200A592D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6480421CA1541200A592D0 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7C1592941C9EC97600AFEDF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C1592751C9EC97500AFEDF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C15927C1C9EC97500AFEDF3;
+			remoteInfo = freeshuttercounter;
+		};
+		7C15929F1C9EC97600AFEDF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7C1592751C9EC97500AFEDF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7C15927C1C9EC97500AFEDF3;
+			remoteInfo = freeshuttercounter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7CAD39101CA0358400B6DD2C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7C13F6AB1CA0498900F66CBD /* GPhoto2.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7C13F6A91CA0498900F66CBD /* GPhoto2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPhoto2.framework; sourceTree = "<group>"; };
+		7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeshuttercounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1592801C9EC97500AFEDF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7C1592811C9EC97500AFEDF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7C1592861C9EC97500AFEDF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7C1592871C9EC97500AFEDF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7C1592891C9EC97500AFEDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7C15928E1C9EC97500AFEDF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1592931C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C15929E1C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freeshuttercounter.m; sourceTree = "<group>"; };
+		7C304E101CA1517100C1191D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C15927A1C9EC97500AFEDF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C13F6AA1CA0498900F66CBD /* GPhoto2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1592901C9EC97600AFEDF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C15929B1C9EC97600AFEDF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C1592741C9EC97500AFEDF3 = {
+			isa = PBXGroup;
+			children = (
+				7C75CD141CA15EBD0006F109 /* README.md */,
+				7C13F6A91CA0498900F66CBD /* GPhoto2.framework */,
+				7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */,
+				7C15927E1C9EC97500AFEDF3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7C15927E1C9EC97500AFEDF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */,
+				7C1592931C9EC97600AFEDF3 /* freeshuttercounter.xctest */,
+				7C15929E1C9EC97600AFEDF3 /* freeshuttercounter.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */ = {
+			isa = PBXGroup;
+			children = (
+				7C1592801C9EC97500AFEDF3 /* AppDelegate.h */,
+				7C1592811C9EC97500AFEDF3 /* AppDelegate.m */,
+				7C1592861C9EC97500AFEDF3 /* ViewController.h */,
+				7C1592871C9EC97500AFEDF3 /* ViewController.m */,
+				7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */,
+				7C1592891C9EC97500AFEDF3 /* Assets.xcassets */,
+				7C15928B1C9EC97500AFEDF3 /* Main.storyboard */,
+				7C15928E1C9EC97500AFEDF3 /* Info.plist */,
+				7C6480421CA1541200A592D0 /* main.m */,
+			);
+			path = freeshuttercounter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7C15927C1C9EC97500AFEDF3 /* freeshuttercounter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1592A71C9EC97600AFEDF3 /* Build configuration list for PBXNativeTarget "freeshuttercounter" */;
+			buildPhases = (
+				7C15927B1C9EC97500AFEDF3 /* Resources */,
+				7C1592791C9EC97500AFEDF3 /* Sources */,
+				7C15927A1C9EC97500AFEDF3 /* Frameworks */,
+				7CAD39101CA0358400B6DD2C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = freeshuttercounter;
+			productName = freeshuttercounter;
+			productReference = 7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7C1592921C9EC97600AFEDF3 /* freeshuttercounterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1592AA1C9EC97600AFEDF3 /* Build configuration list for PBXNativeTarget "freeshuttercounterTests" */;
+			buildPhases = (
+				7C15928F1C9EC97600AFEDF3 /* Sources */,
+				7C1592901C9EC97600AFEDF3 /* Frameworks */,
+				7C1592911C9EC97600AFEDF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C1592951C9EC97600AFEDF3 /* PBXTargetDependency */,
+			);
+			name = freeshuttercounterTests;
+			productName = freeshuttercounterTests;
+			productReference = 7C1592931C9EC97600AFEDF3 /* freeshuttercounter.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7C15929D1C9EC97600AFEDF3 /* freeshuttercounterUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1592AD1C9EC97600AFEDF3 /* Build configuration list for PBXNativeTarget "freeshuttercounterUITests" */;
+			buildPhases = (
+				7C15929A1C9EC97600AFEDF3 /* Sources */,
+				7C15929B1C9EC97600AFEDF3 /* Frameworks */,
+				7C15929C1C9EC97600AFEDF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7C1592A01C9EC97600AFEDF3 /* PBXTargetDependency */,
+			);
+			name = freeshuttercounterUITests;
+			productName = freeshuttercounterUITests;
+			productReference = 7C15929E1C9EC97600AFEDF3 /* freeshuttercounter.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7C1592751C9EC97500AFEDF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Oleg Orlov";
+				TargetAttributes = {
+					7C15927C1C9EC97500AFEDF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					7C1592921C9EC97600AFEDF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 7C15927C1C9EC97500AFEDF3;
+					};
+					7C15929D1C9EC97600AFEDF3 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 7C15927C1C9EC97500AFEDF3;
+					};
+				};
+			};
+			buildConfigurationList = 7C1592781C9EC97500AFEDF3 /* Build configuration list for PBXProject "freeshuttercounter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7C1592741C9EC97500AFEDF3;
+			productRefGroup = 7C15927E1C9EC97500AFEDF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7C15927C1C9EC97500AFEDF3 /* freeshuttercounter */,
+				7C1592921C9EC97600AFEDF3 /* freeshuttercounterTests */,
+				7C15929D1C9EC97600AFEDF3 /* freeshuttercounterUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7C15927B1C9EC97500AFEDF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C15928A1C9EC97500AFEDF3 /* Assets.xcassets in Resources */,
+				7C15928D1C9EC97500AFEDF3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C1592911C9EC97600AFEDF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C15929C1C9EC97600AFEDF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7C1592791C9EC97500AFEDF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C1592881C9EC97500AFEDF3 /* ViewController.m in Sources */,
+				7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */,
+				7C6480431CA1541200A592D0 /* main.m in Sources */,
+				7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C15928F1C9EC97600AFEDF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C15929A1C9EC97600AFEDF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7C1592951C9EC97600AFEDF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C15927C1C9EC97500AFEDF3 /* freeshuttercounter */;
+			targetProxy = 7C1592941C9EC97600AFEDF3 /* PBXContainerItemProxy */;
+		};
+		7C1592A01C9EC97600AFEDF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7C15927C1C9EC97500AFEDF3 /* freeshuttercounter */;
+			targetProxy = 7C15929F1C9EC97600AFEDF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7C15928B1C9EC97500AFEDF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7C304E101CA1517100C1191D /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7C1592A51C9EC97600AFEDF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7C1592A61C9EC97600AFEDF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7C1592A81C9EC97600AFEDF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
+				INFOPLIST_FILE = "$(SRCROOT)/freeshuttercounter/Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
+				PRODUCT_NAME = freeshuttercounter;
+				SDKROOT = macosx;
+				SEPARATE_STRIP = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		7C1592A91C9EC97600AFEDF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_TESTABILITY = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
+				INFOPLIST_FILE = "$(SRCROOT)/freeshuttercounter/Info.plist";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
+				PRODUCT_NAME = freeshuttercounter;
+				SDKROOT = macosx;
+				SEPARATE_STRIP = YES;
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		7C1592AB1C9EC97600AFEDF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = freeshuttercounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounterTests;
+				PRODUCT_NAME = freeshuttercounter;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/freeshuttercounter.app/Contents/MacOS/freeshuttercounter";
+			};
+			name = Debug;
+		};
+		7C1592AC1C9EC97600AFEDF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = freeshuttercounterTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounterTests;
+				PRODUCT_NAME = freeshuttercounter;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/freeshuttercounter.app/Contents/MacOS/freeshuttercounter";
+			};
+			name = Release;
+		};
+		7C1592AE1C9EC97600AFEDF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = freeshuttercounterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounterUITests;
+				PRODUCT_NAME = freeshuttercounter;
+				TEST_TARGET_NAME = freeshuttercounter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		7C1592AF1C9EC97600AFEDF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = freeshuttercounterUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounterUITests;
+				PRODUCT_NAME = freeshuttercounter;
+				TEST_TARGET_NAME = freeshuttercounter;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7C1592781C9EC97500AFEDF3 /* Build configuration list for PBXProject "freeshuttercounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1592A51C9EC97600AFEDF3 /* Debug */,
+				7C1592A61C9EC97600AFEDF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1592A71C9EC97600AFEDF3 /* Build configuration list for PBXNativeTarget "freeshuttercounter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1592A81C9EC97600AFEDF3 /* Debug */,
+				7C1592A91C9EC97600AFEDF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1592AA1C9EC97600AFEDF3 /* Build configuration list for PBXNativeTarget "freeshuttercounterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1592AB1C9EC97600AFEDF3 /* Debug */,
+				7C1592AC1C9EC97600AFEDF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1592AD1C9EC97600AFEDF3 /* Build configuration list for PBXNativeTarget "freeshuttercounterUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C1592AE1C9EC97600AFEDF3 /* Debug */,
+				7C1592AF1C9EC97600AFEDF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7C1592751C9EC97500AFEDF3 /* Project object */;
+}
