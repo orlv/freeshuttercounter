@@ -63,6 +63,7 @@
 		7C304E101CA1517100C1191D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7CA461611CA162CD00C98B8D /* freeshuttercounter-1.0.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freeshuttercounter-1.0.1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				7C75CD141CA15EBD0006F109 /* README.md */,
+				7CA461611CA162CD00C98B8D /* freeshuttercounter-1.0.1.png */,
 				7C13F6A91CA0498900F66CBD /* GPhoto2.framework */,
 				7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */,
 				7C15927E1C9EC97500AFEDF3 /* Products */,
