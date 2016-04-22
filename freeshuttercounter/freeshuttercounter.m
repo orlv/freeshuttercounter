@@ -58,7 +58,7 @@ NSString *camera_get_config(Camera *camera, GPContext *context, const char *key)
 		gp_widget_free(widget);
 		return @"gp_widget_get_value failed.\n";
 	}
-
+	
 	NSString *out = [NSString stringWithUTF8String:value];
 	gp_widget_free(widget);
 	return out;
@@ -80,7 +80,7 @@ NSString * camera_get_info()
 	GPContext	*context;
 	
 	NSMutableString *output = [[NSMutableString alloc] initWithString:@""];
-		
+	
 	kill_PTPCamera();
 	
 	context = gp_context_new();

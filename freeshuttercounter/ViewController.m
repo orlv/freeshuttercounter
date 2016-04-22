@@ -27,28 +27,30 @@
 NSString * camera_get_info();
 
 - (IBAction)button_get_camera_data:(id)sender {
-    [self.output setStringValue:camera_get_info()];
-
+	[self.output setStringValue:camera_get_info()];
+	
 	[self.output selectText:self];
 	[[self.output currentEditor] setSelectedRange:NSMakeRange([[self.output stringValue] length], 0)];
 }
 
 - (IBAction)button_homepage:(id)sender {
-    NSURL *url = [NSURL URLWithString:@"http://freeshuttercounter.oleg-orlov.com"];
-    [[NSWorkspace sharedWorkspace] openURL:url];
+	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://orlv.github.io/freeshuttercounter/?version=%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+	[[NSWorkspace sharedWorkspace] openURL:url];
 }
 
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-
+	[super viewDidLoad];
+	
+	
+	_aboutText.stringValue = [NSString stringWithFormat:@"freeshuttercounter v%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
 }
 
 
 - (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
+	[super setRepresentedObject:representedObject];
+	
+	// Update the view, if already loaded.
 }
 
 

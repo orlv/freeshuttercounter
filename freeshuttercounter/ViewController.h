@@ -24,6 +24,7 @@
 @interface ViewController : NSViewController
 
 @property (unsafe_unretained) IBOutlet NSTextField *output;
+@property (weak) IBOutlet NSTextField *aboutText;
 
 @end
 

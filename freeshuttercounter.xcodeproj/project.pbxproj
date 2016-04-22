@@ -64,7 +64,6 @@
 		7C304E101CA1517100C1191D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		7CA461611CA162CD00C98B8D /* freeshuttercounter-1.0.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "freeshuttercounter-1.0.1.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +97,6 @@
 			children = (
 				7C75CD141CA15EBD0006F109 /* README.md */,
 				7C1AE5381CA1681500B43077 /* COPYING */,
-				7CA461611CA162CD00C98B8D /* freeshuttercounter-1.0.1.png */,
 				7C13F6A91CA0498900F66CBD /* GPhoto2.framework */,
 				7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */,
 				7C15927E1C9EC97500AFEDF3 /* Products */,
@@ -194,7 +192,7 @@
 		7C1592751C9EC97500AFEDF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Oleg Orlov";
 				TargetAttributes = {
 					7C15927C1C9EC97500AFEDF3 = {
@@ -391,7 +389,6 @@
 		7C1592A81C9EC97600AFEDF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -408,7 +405,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
 				PRODUCT_NAME = freeshuttercounter;
@@ -421,7 +418,6 @@
 		7C1592A91C9EC97600AFEDF3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -438,7 +434,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
 				PRODUCT_NAME = freeshuttercounter;
