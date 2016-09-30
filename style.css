@@ -28,7 +28,7 @@ a:hover{
 #content {
 	margin: 0 auto;
 	text-align: left;
-	max-width: 800px;
+	max-width: 840px;
 	padding-left: 10px;
 }
 
@@ -46,7 +46,7 @@ a:hover{
 }
 
 #screenshot1 {
-	float:left;
+	float:right;
 }
 
 #paragraph1 {
