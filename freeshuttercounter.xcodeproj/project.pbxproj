@@ -10,11 +10,10 @@
 		7C13F6AA1CA0498900F66CBD /* GPhoto2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F6A91CA0498900F66CBD /* GPhoto2.framework */; };
 		7C13F6AB1CA0498900F66CBD /* GPhoto2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F6A91CA0498900F66CBD /* GPhoto2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592811C9EC97500AFEDF3 /* AppDelegate.m */; };
-		7C1592881C9EC97500AFEDF3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592871C9EC97500AFEDF3 /* ViewController.m */; };
 		7C15928A1C9EC97500AFEDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1592891C9EC97500AFEDF3 /* Assets.xcassets */; };
-		7C15928D1C9EC97500AFEDF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C15928B1C9EC97500AFEDF3 /* Main.storyboard */; };
 		7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */; };
 		7C6480431CA1541200A592D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6480421CA1541200A592D0 /* main.m */; };
+		7C860DB91D9C1F3D00862EE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,17 +52,15 @@
 		7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeshuttercounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1592801C9EC97500AFEDF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C1592811C9EC97500AFEDF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7C1592861C9EC97500AFEDF3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7C1592871C9EC97500AFEDF3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7C1592891C9EC97500AFEDF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C15928E1C9EC97500AFEDF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C1592931C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C15929E1C9EC97600AFEDF3 /* freeshuttercounter.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = freeshuttercounter.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = freeshuttercounter.m; sourceTree = "<group>"; };
 		7C1AE5381CA1681500B43077 /* COPYING */ = {isa = PBXFileReference; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
-		7C304E101CA1517100C1191D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +115,9 @@
 			children = (
 				7C1592801C9EC97500AFEDF3 /* AppDelegate.h */,
 				7C1592811C9EC97500AFEDF3 /* AppDelegate.m */,
-				7C1592861C9EC97500AFEDF3 /* ViewController.h */,
-				7C1592871C9EC97500AFEDF3 /* ViewController.m */,
 				7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */,
 				7C1592891C9EC97500AFEDF3 /* Assets.xcassets */,
-				7C15928B1C9EC97500AFEDF3 /* Main.storyboard */,
+				7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */,
 				7C15928E1C9EC97500AFEDF3 /* Info.plist */,
 				7C6480421CA1541200A592D0 /* main.m */,
 			);
@@ -192,7 +187,7 @@
 		7C1592751C9EC97500AFEDF3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Oleg Orlov";
 				TargetAttributes = {
 					7C15927C1C9EC97500AFEDF3 = {
@@ -234,7 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C15928A1C9EC97500AFEDF3 /* Assets.xcassets in Resources */,
-				7C15928D1C9EC97500AFEDF3 /* Main.storyboard in Resources */,
+				7C860DB91D9C1F3D00862EE3 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +254,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C1592881C9EC97500AFEDF3 /* ViewController.m in Sources */,
 				7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */,
 				7C6480431CA1541200A592D0 /* main.m in Sources */,
 				7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */,
@@ -295,17 +289,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		7C15928B1C9EC97500AFEDF3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				7C304E101CA1517100C1191D /* en */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		7C1592A51C9EC97600AFEDF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -320,8 +303,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -363,8 +348,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -401,11 +388,11 @@
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
-				INFOPLIST_FILE = "$(SRCROOT)/freeshuttercounter/Info.plist";
+				INFOPLIST_FILE = freeshuttercounter/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
 				PRODUCT_NAME = freeshuttercounter;
@@ -430,11 +417,11 @@
 					"$(PROJECT_DIR)",
 				);
 				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/GPhoto2.framework/prefix/include";
-				INFOPLIST_FILE = "$(SRCROOT)/freeshuttercounter/Info.plist";
+				INFOPLIST_FILE = freeshuttercounter/Info.plist;
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../Frameworks @loader_path/../Frameworks";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = orlv.freeshuttercounter;
 				PRODUCT_NAME = freeshuttercounter;

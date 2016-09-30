@@ -25,9 +25,25 @@
 
 @interface AppDelegate ()
 
+@property (weak) IBOutlet NSWindow *window;
 @end
 
 @implementation AppDelegate
+
+- (IBAction)button_homepage:(id)sender {
+	NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://orlv.github.io/freeshuttercounter/?version=%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]]];
+	[[NSWorkspace sharedWorkspace] openURL:url];
+}
+
+
+NSString * camera_get_info();
+
+- (IBAction)button_get_camera_data:(id)sender {
+	[self.output setStringValue:camera_get_info()];
+
+	[self.output selectText:self];
+	[[self.output currentEditor] setSelectedRange:NSMakeRange([[self.output stringValue] length], 0)];
+}
 
 
 /* 	check if we in /Applications folder */
@@ -50,9 +66,9 @@ bool check_installed()
 		
 		[[NSApplication sharedApplication] terminate:nil];
 	}
+	
+	_aboutText.stringValue = [NSString stringWithFormat:@"freeshuttercounter v%@",[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
 }
-
-
 
 -(BOOL) applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)app {
     return YES;

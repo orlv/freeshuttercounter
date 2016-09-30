@@ -24,6 +24,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
+@property (weak) IBOutlet NSTextField *aboutText;
+@property (weak) IBOutlet NSTextField *output;
 
 @end
 
