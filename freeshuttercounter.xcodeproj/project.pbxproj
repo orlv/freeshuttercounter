@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C13F6AA1CA0498900F66CBD /* GPhoto2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F6A91CA0498900F66CBD /* GPhoto2.framework */; };
-		7C13F6AB1CA0498900F66CBD /* GPhoto2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C13F6A91CA0498900F66CBD /* GPhoto2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C1592821C9EC97500AFEDF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592811C9EC97500AFEDF3 /* AppDelegate.m */; };
 		7C15928A1C9EC97500AFEDF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C1592891C9EC97500AFEDF3 /* Assets.xcassets */; };
 		7C1592BF1C9EF52E00AFEDF3 /* freeshuttercounter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C1592BE1C9EF52E00AFEDF3 /* freeshuttercounter.m */; };
 		7C6480431CA1541200A592D0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6480421CA1541200A592D0 /* main.m */; };
 		7C860DB91D9C1F3D00862EE3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */; };
+		7CEF907A1E0D9C33003B1880 /* GPhoto2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEF90741E0D9099003B1880 /* GPhoto2.framework */; };
+		7CEF907B1E0DA050003B1880 /* GPhoto2.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7CEF90741E0D9099003B1880 /* GPhoto2.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7C13F6AB1CA0498900F66CBD /* GPhoto2.framework in Embed Frameworks */,
+				7CEF907B1E0DA050003B1880 /* GPhoto2.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +48,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7C13F6A91CA0498900F66CBD /* GPhoto2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPhoto2.framework; sourceTree = "<group>"; };
 		7C15927D1C9EC97500AFEDF3 /* freeshuttercounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = freeshuttercounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C1592801C9EC97500AFEDF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C1592811C9EC97500AFEDF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		7C6480421CA1541200A592D0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7C75CD141CA15EBD0006F109 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7C860DB81D9C1F3D00862EE3 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		7CEF90741E0D9099003B1880 /* GPhoto2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GPhoto2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C13F6AA1CA0498900F66CBD /* GPhoto2.framework in Frameworks */,
+				7CEF907A1E0D9C33003B1880 /* GPhoto2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			children = (
 				7C75CD141CA15EBD0006F109 /* README.md */,
 				7C1AE5381CA1681500B43077 /* COPYING */,
-				7C13F6A91CA0498900F66CBD /* GPhoto2.framework */,
+				7CEF90741E0D9099003B1880 /* GPhoto2.framework */,
 				7C15927F1C9EC97500AFEDF3 /* freeshuttercounter */,
 				7C15927E1C9EC97500AFEDF3 /* Products */,
 			);
@@ -135,6 +135,7 @@
 				7C1592791C9EC97500AFEDF3 /* Sources */,
 				7C15927A1C9EC97500AFEDF3 /* Frameworks */,
 				7CAD39101CA0358400B6DD2C /* Embed Frameworks */,
+				7CEF90771E0D9596003B1880 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -248,6 +249,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7CEF90771E0D9596003B1880 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\nPREFIX=/Applications/freeshuttercounter.app/Contents/Frameworks\n\nFILES=\"$BUILT_PRODUCTS_DIR/freeshuttercounter.app/Contents/Frameworks/GPhoto2.framework/prefix/lib/*.dylib\"\n                                                                                                      \nfor n in $FILES\ndo\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2_port.12.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2_port.12.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libjpeg.62.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libjpeg.62.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libltdl.7.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libltdl.7.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libturbojpeg.0.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libturbojpeg.0.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libusb-1.0.0.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libusb-1.0.0.dylib\" $n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libusb-0.1.4.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libusb-0.1.4.dylib\" $n\ninstall_name_tool -id \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/`basename $n`\" $n\ndone\n\ninstall_name_tool -change \"$PREFIX/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"@executable_path/../Frameworks/GPhoto2.framework/prefix/lib/libgphoto2.6.dylib\" \"$BUILT_PRODUCTS_DIR/freeshuttercounter.app/Contents/MacOS/freeshuttercounter\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7C1592791C9EC97500AFEDF3 /* Sources */ = {
