@@ -4,7 +4,7 @@ FreeShutterCounter is OS X application that shows Canon EOS DSLR shutter count.
 
 Tested: Canon EOS 5D Mark III, 5D Mark II, 7D, 60D, 50D on macOS 10.7-10.12
 
-![freeshuttercounter 1.1 screenshot](http://orlv.github.io/freeshuttercounter/freeshuttercounter-1.1.png)
+![freeshuttercounter 1.2.1 screenshot](http://orlv.github.io/freeshuttercounter/freeshuttercounter-1.2.1.png)
 
 ### Binary
 
