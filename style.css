@@ -1,8 +1,7 @@
-
-body{
+body {
 	margin: 0px;
 	background-color: #ffffff;
-	font: 18px PT Sans, sans-serif;
+	font: 18px "PT Sans", "sans-serif";
 	color: #000000;
 }
 
@@ -32,17 +31,15 @@ a:hover{
 	padding-left: 10px;
 }
 
-#page{
+#page {
 	width: 100%;
 	white-space:pre-wrap;
 }
 
-#bottom{
+#bottom {
 	margin: 5px 0px 20px 0px;
 	text-align: center;
 	width: 100%;
-	font: 10px;
-	color: #aaaaaa;
 }
 
 #screenshot1 {
