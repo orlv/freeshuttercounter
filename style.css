@@ -42,6 +42,17 @@ a:hover{
 	width: 100%;
 }
 
-#screenshot1 {
+
+#right {
 	float:right;
+}
+
+#paypal {
+	padding-left: 80px;
+	margin-top: -40px;
+	width: 300px;
+}
+
+#paypal_form {
+	margin-top: -50px;
 }
