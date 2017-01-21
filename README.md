@@ -8,7 +8,7 @@ Tested: Canon EOS 5D Mark III, 5D Mark II, 7D, 60D, 50D on macOS 10.7-10.12
 
 ### Binary
 
-[freeshuttercounter-1.2.1.dmg](https://github.com/orlv/freeshuttercounter/releases/download/1.2.1/freeshuttercounter-1.2.1.dmg)
+[freeshuttercounter-1.2.1.dmg](https://github.com/orlv/freeshuttercounter/releases/download/1.2.2/freeshuttercounter-1.2.2.dmg)
 
 ### Building
 This app is based on [libgphoto2](https://github.com/gphoto/libgphoto2) library 
