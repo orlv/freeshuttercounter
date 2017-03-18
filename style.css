@@ -1,58 +1,100 @@
 body {
-	margin: 0px;
-	background-color: #ffffff;
-	font: 18px "PT Sans", "sans-serif";
-	color: #000000;
-}
-
-a {
-	text-decoration: none;
-	color:#08c;;
-}
-
-a:link {
-	text-decoration: none;
-	color:#08c;
-}
-
-a:hover{
-	text-decoration: underline;
-	color:#08c;
-}
-
-#page{
-	width: 100%;
-}
-
-#content {
-	margin: 0 auto;
-	text-align: left;
-	max-width: 840px;
-	padding-left: 10px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
 }
 
 #page {
-	width: 100%;
-	white-space:pre-wrap;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
 }
 
-#bottom {
-	margin: 5px 0px 20px 0px;
-	text-align: center;
-	width: 100%;
+#page ul {
+    margin: 0;
+    padding-left: 30px;
+    text-align: left;
 }
 
-
-#right {
-	float:right;
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-#paypal {
-	padding-left: 80px;
-	margin-top: -40px;
-	width: 300px;
+.inside {
+    max-width: 840px;
+    padding: 40px 0 100px 10px;
+    font-size: 17px;
 }
 
-#paypal_form {
-	margin-top: -50px;
+.logo {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+#img-total-downloads-count {
+    height: 20px;
+}
+
+.vh100 {
+    height: 100vh;
+    justify-content: center;
+}
+
+.vh100 .inside {
+    padding-bottom: 10vh;
+}
+
+h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+a, a:link, a:hover {
+    text-decoration: none;
+    color: #08c;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.color1 {
+    background-color: black;
+    color: white;
+}
+
+.color1 a, .color1 a:link, .color1 a:hover {
+    text-decoration: none;
+    color: #52a0c6;;
+}
+
+.color1 a:hover {
+    text-decoration: underline;
+}
+
+.color2 {
+    background-color: white;
+    color: black;
+}
+
+.color3 {
+    background-color: rgb(92, 139, 191);
+    color: white;
+}
+
+.color4 {
+    background-color: rgb(191, 82, 82);
+    color: white;
+}
+
+.p {
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
 }
