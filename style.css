@@ -63,13 +63,13 @@ a:hover {
 }
 
 .color1 {
-    background-color: black;
+    background-color: #3e9686;
     color: white;
 }
 
 .color1 a, .color1 a:link, .color1 a:hover {
     text-decoration: none;
-    color: #52a0c6;;
+    color: #100035;
 }
 
 .color1 a:hover {
