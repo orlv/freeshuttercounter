@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     color: #000000;
-    background-color: #3e9686;
+    background-color: #ffffff;
 }
 
 #page {
@@ -64,8 +64,8 @@ a:hover {
 }
 
 .color1 {
-    background-color: #3e9686;
-    color: white;
+    background-color: #e6e6e6;
+    color: #000000;
 }
 
 .color1 a, .color1 a:link, .color1 a:hover {
@@ -98,4 +98,12 @@ a:hover {
     margin-bottom: 1em;
     margin-left: 0;
     margin-right: 0;
+}
+
+#download .inside {
+    padding-bottom: 40px;
+}
+
+#download > div > div.p {
+    padding-bottom: 30px;
 }
