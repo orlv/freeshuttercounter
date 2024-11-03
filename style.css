@@ -102,3 +102,7 @@ a:hover {
 .fb-like {
     padding-bottom: 30px;
 }
+
+.bold {
+    font-weight: bold;
+}
