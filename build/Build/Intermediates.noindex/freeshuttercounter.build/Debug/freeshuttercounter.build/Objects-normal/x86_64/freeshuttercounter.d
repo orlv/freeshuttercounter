@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/damiduuofc/Documents/freeshuttercounter/freeshuttercounter/freeshuttercounter.m \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/Foundation.framework/Modules/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/21/include/module.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/DarwinFoundation2.modulemap \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AppKit.framework/Modules/module.modulemap \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-camera.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-abilities-list.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-context.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-list.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-port-info-list.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-port.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-port-portability.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-port-log.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-widget.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-filesys.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-file.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-result.h \
+  /Users/damiduuofc/Documents/freeshuttercounter/GPhoto2.framework/prefix/include/gphoto2/gphoto2-port-result.h

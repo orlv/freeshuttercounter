@@ -22,6 +22,9 @@
 #import <Foundation/Foundation.h>
 #import <Appkit/NSRunningApplication.h>
 #include <gphoto2/gphoto2-camera.h>
+#include <gphoto2/gphoto2-abilities-list.h>
+#include <gphoto2/gphoto2-port-info-list.h>
+#include <gphoto2/gphoto2-list.h>
 
 
 NSString *camera_get_config(Camera *camera, GPContext *context, const char *key)
@@ -74,6 +77,114 @@ void kill_PTPCamera()
 	}
 }
 
+int init_camera_with_fallback(Camera **camera, GPContext *context)
+{
+	gp_camera_new(camera);
+	int ret = gp_camera_init(*camera, context);
+	if (ret >= GP_OK) {
+		return ret;
+	}
+	
+	gp_camera_free(*camera);
+	*camera = NULL;
+	
+	GPPortInfoList *portinfolist = NULL;
+	gp_port_info_list_new(&portinfolist);
+	gp_port_info_list_load(portinfolist);
+	
+	CameraAbilitiesList *abilities = NULL;
+	gp_abilities_list_new(&abilities);
+	gp_abilities_list_load(abilities, context);
+	
+	CameraList *list = NULL;
+	gp_list_new(&list);
+	
+	gp_abilities_list_detect(abilities, portinfolist, list, context);
+	int count = gp_list_count(list);
+	BOOL success = NO;
+	
+	for (int i = 0; i < count; i++) {
+		const char *model = NULL;
+		const char *port = NULL;
+		gp_list_get_name(list, i, &model);
+		gp_list_get_value(list, i, &port);
+		
+		if (strcmp(model, "USB PTP Class Camera") == 0) {
+			int port_idx = gp_port_info_list_lookup_path(portinfolist, port);
+			int ab_idx = gp_abilities_list_lookup_model(abilities, "USB PTP Class Camera");
+			if (port_idx >= 0 && ab_idx >= 0) {
+				GPPortInfo pi;
+				CameraAbilities a;
+				gp_port_info_list_get_info(portinfolist, port_idx, &pi);
+				gp_abilities_list_get_abilities(abilities, ab_idx, &a);
+				
+				Camera *tmp_camera = NULL;
+				gp_camera_new(&tmp_camera);
+				gp_camera_set_port_info(tmp_camera, pi);
+				gp_camera_set_abilities(tmp_camera, a);
+				
+				if (gp_camera_init(tmp_camera, context) >= GP_OK) {
+					NSString *cam_model = camera_get_config(tmp_camera, context, "cameramodel");
+					BOOL is_canon = NO;
+					if (cam_model && ![cam_model hasPrefix:@"gp_"] && ![cam_model hasPrefix:@"widget "]) {
+						if ([cam_model rangeOfString:@"Canon" options:NSCaseInsensitiveSearch].location != NSNotFound ||
+							[cam_model rangeOfString:@"EOS" options:NSCaseInsensitiveSearch].location != NSNotFound) {
+							is_canon = YES;
+						}
+					}
+					if (!is_canon) {
+						CameraText summary;
+						if (gp_camera_get_summary(tmp_camera, &summary, context) >= GP_OK) {
+							NSString *sum_str = [NSString stringWithUTF8String:summary.text];
+							if ([sum_str rangeOfString:@"Canon" options:NSCaseInsensitiveSearch].location != NSNotFound ||
+								[sum_str rangeOfString:@"EOS" options:NSCaseInsensitiveSearch].location != NSNotFound) {
+								is_canon = YES;
+							}
+						}
+					}
+					
+					if (is_canon) {
+						gp_camera_exit(tmp_camera, context);
+						gp_camera_free(tmp_camera);
+						
+						int canon_ab_idx = gp_abilities_list_lookup_model(abilities, "Canon EOS 1300D");
+						if (canon_ab_idx >= 0) {
+							CameraAbilities canon_a;
+							gp_abilities_list_get_abilities(abilities, canon_ab_idx, &canon_a);
+							
+							gp_camera_new(camera);
+							gp_camera_set_port_info(*camera, pi);
+							gp_camera_set_abilities(*camera, canon_a);
+							
+							if (gp_camera_init(*camera, context) >= GP_OK) {
+								success = YES;
+								break;
+							} else {
+								gp_camera_free(*camera);
+								*camera = NULL;
+							}
+						}
+					} else {
+						gp_camera_exit(tmp_camera, context);
+						gp_camera_free(tmp_camera);
+					}
+				} else {
+					gp_camera_free(tmp_camera);
+				}
+			}
+		}
+	}
+	
+	gp_list_free(list);
+	gp_abilities_list_free(abilities);
+	gp_port_info_list_free(portinfolist);
+	
+	if (success) {
+		return GP_OK;
+	}
+	return ret;
+}
+
 NSString * camera_get_info()
 {
 	Camera		*camera;
@@ -84,11 +195,10 @@ NSString * camera_get_info()
 	kill_PTPCamera();
 	
 	context = gp_context_new();
-	gp_camera_new(&camera);
 	
-	if(gp_camera_init(camera, context) < GP_OK) {
+	if(init_camera_with_fallback(&camera, context) < GP_OK) {
 		[output appendString:@"No camera detected.\nTry again."];
-		gp_camera_free(camera);
+		gp_context_unref(context);
 		return output;
 	}
 	
